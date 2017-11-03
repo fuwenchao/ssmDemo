@@ -34,7 +34,7 @@ public abstract class BaseDaoImpl<T extends Identifiable> implements BaseDao<T> 
 	/**
 	 * @fields sqlNamespace SqlMapping命名空间 
 	 */
-	private String sqlNamespace = getDefaultSqlNamespace();
+	private String sqlNamespace = getDefaultSqlNamespace();  //com.viathink.sys.domain.SysDictionary
 
 	/**
 	 * 获取泛型类型的实体对象类全名

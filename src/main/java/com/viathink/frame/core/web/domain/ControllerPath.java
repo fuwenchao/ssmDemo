@@ -39,7 +39,7 @@ public class ControllerPath {
 		if (entityClass == null) throw new IllegalArgumentException(genericClass.getName() + "不是泛型类型！");
 
 		words = getWords(entityClass.getSimpleName());   //sys dictionary
-		entityName = words[words.length - 1];            //dict
+		entityName = words[words.length - 1];            //dictionary
 	}
 
 	/**
@@ -60,9 +60,9 @@ public class ControllerPath {
 	 */
 	public String getListViewPath() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(getBasePath());
-		sb.append(PagePrefix.LIST);
-		sb.append(StringEx.toUpperCaseFirstOne(entityName));
+		sb.append(getBasePath());    //sys/dictionary/
+		sb.append(PagePrefix.LIST);    //list
+		sb.append(StringEx.toUpperCaseFirstOne(entityName));  //dictionary
 		return sb.toString();
 	}
 
